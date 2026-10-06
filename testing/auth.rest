@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbXV1dG1oNmEwMDAwOGd1bWo5ZjVqNTExIiwibmFtZSI6IlJhZmVsIEZlcm5hbmRvIiwiZW1haWwiOiJyYWZlbEBnbWFpbC5jb20iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTc5MTE3OTM2NSwiZXhwIjoxNzkxMTc5Mzk1fQ.Zng9QEtd9Y-9m28V4XVx2whYxWDy2mlovIQ3zWdIKGo
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Rafel Fernando",
+    "email": "rafel@gmail.com",
+    "password": "12345678",
+    "confPassword": "12345678"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "rafel@gmail.com",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
